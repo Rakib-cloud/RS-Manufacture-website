@@ -2,6 +2,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './Pages/Home/Home';
+import PrivateRoute from './Pages/Home/PrivateRoute';
 import Login from './Pages/Login/Login';
 
 import Signup from './Pages/Login/SignUp';
@@ -9,6 +10,7 @@ import Signup from './Pages/Login/SignUp';
 
 import Navbar from './Pages/Navbar/Navbar';
 import NotFound from './Pages/Notfound/NotFound';
+import Purchase from './Pages/Purchase/Purchase';
 
 function App() {
   return (
@@ -17,6 +19,11 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home></Home>} />
+        <Route path="Purchase" element={<PrivateRoute>
+          <Purchase></Purchase>
+        </PrivateRoute>} />
+       
+
         <Route path="login" element={<Login></Login>} />
         <Route path="signup" element={<Signup></Signup>} />
         <Route path="*" element={<NotFound></NotFound>}></Route>
