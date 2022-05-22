@@ -4,6 +4,7 @@ import Business from './Business';
 import Contact from './Contact';
 import Footer from './Footer';
 import Foreview from './Foreview';
+import Tools from './Tools';
 
 
 
@@ -12,6 +13,7 @@ const Home = () => {
         <div>
           
             <Banner></Banner>
+            <Tools></Tools>
             <Business></Business>
            <Foreview></Foreview>
            <Contact></Contact>
