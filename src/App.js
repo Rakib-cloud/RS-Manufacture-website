@@ -11,6 +11,7 @@ import Signup from './Pages/Login/SignUp';
 
 import Navbar from './Pages/Navbar/Navbar';
 import NotFound from './Pages/Notfound/NotFound';
+import Portfolio from './Pages/Portfolio/Portfolio';
 import Purchase from './Pages/Purchase/Purchase';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         </PrivateRoute>} />
        
         <Route path="blogs" element={<Blogs></Blogs>} />
+        <Route path="portfolio" element={<Portfolio></Portfolio>} />
         <Route path="login" element={<Login></Login>} />
         <Route path="signup" element={<Signup></Signup>} />
         <Route path="*" element={<NotFound></NotFound>}></Route>
