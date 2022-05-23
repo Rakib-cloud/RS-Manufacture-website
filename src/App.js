@@ -1,6 +1,7 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Blogs from './Pages/Blogs/Blogs';
 import Home from './Pages/Home/Home';
 import PrivateRoute from './Pages/Home/PrivateRoute';
 import Login from './Pages/Login/Login';
@@ -23,7 +24,7 @@ function App() {
           <Purchase></Purchase>
         </PrivateRoute>} />
        
-
+        <Route path="blogs" element={<Blogs></Blogs>} />
         <Route path="login" element={<Login></Login>} />
         <Route path="signup" element={<Signup></Signup>} />
         <Route path="*" element={<NotFound></NotFound>}></Route>
