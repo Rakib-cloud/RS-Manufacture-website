@@ -13,6 +13,7 @@ import Navbar from './Pages/Navbar/Navbar';
 import NotFound from './Pages/Notfound/NotFound';
 import Portfolio from './Pages/Portfolio/Portfolio';
 import Purchase from './Pages/Purchase/Purchase';
+import Purchasedetails from './Pages/Purchase/Purchasedetails';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         <Route path="/" element={<Home></Home>} />
         <Route path="Purchase" element={<PrivateRoute>
           <Purchase></Purchase>
+        </PrivateRoute>} />
+        <Route path="Purchase/:_id" element={<PrivateRoute>
+          <Purchasedetails></Purchasedetails>
         </PrivateRoute>} />
        
         <Route path="blogs" element={<Blogs></Blogs>} />

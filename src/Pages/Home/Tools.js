@@ -4,7 +4,7 @@ import Toolsdetails from './Toolsdetails';
 const Tools = () => {
     const [tools, setTools] = useState([]);
     useEffect(() => {
-        fetch('parts.json')
+        fetch('http://localhost:5000/parts')
             .then(res => res.json())
             .then(data => setTools(data));
     }, [])

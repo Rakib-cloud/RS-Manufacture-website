@@ -1,56 +1,56 @@
 [
     {
-      "_id": 1,
-      "name": "Computer Ram",
+      
+      "name": "DDR8 ramasta ",
       "img": "https://w0.peakpx.com/wallpaper/478/3/HD-wallpaper-random-access-memory-ram-computer.jpg",
-      "short":"its good",
-      "minorder":5,
-      "availabe":3,
+      "short":"Designed For Overclocking At A High Level Of Performance. The Special Performance PCB Helps Manage Heat And Gives Improved Overclocking Headroom Since Each Module Is Designed With A Pure Aluminum Heat Spreader For Faster Cooling And Cooler Operation.",
+      "minorder":50,
+      "availabe":3000,
       "unitprice":2200
     },
     {
-      "_id": 1,
-      "name": "Computer Ram",
-      "img": "https://w0.peakpx.com/wallpaper/478/3/HD-wallpaper-random-access-memory-ram-computer.jpg",
-      "short":"its good",
+      
+      "name": "HP V28 4K 28 Monitor 28 ",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXUSdeDCba9UPfqKihXXHUc9XbevPru-YFCw&usqp=CAU",
+      "short":"Immerse yourself in entertainment with the V28 4K monitor. With 4x the pixels, experience significantly sharper, more premiere image clarity, for theatre quality viewing in the comfort of your own home. Plus, when using AMD FreeSync™ Technology paired with your AMD graphics card, you’ll enjoy blur and lag free entertainment. And with HDMI 2.0 at a 60Hz refresh rate, watch, play and stream flicker-free.",
       "minorder":5,
-      "availabe":3,
-      "unitprice":2200
+      "availabe":300,
+      "unitprice":15000
     },
     {
-      "_id": 1,
-      "name": "Computer Ram",
-      "img": "https://w0.peakpx.com/wallpaper/478/3/HD-wallpaper-random-access-memory-ram-computer.jpg",
-      "short":"its good",
-      "minorder":5,
-      "availabe":3,
-      "unitprice":2200
+      
+      "name": "vsn-sonic-402-pro-vision-sound-box",
+      "img": "https://www.kindpng.com/picc/m/743-7432274_vsn-sonic-402-pro-vision-sound-box-price.png",
+      "short":" Multimedia Speaker- Sonic-402 Pro Item code: 873148. Brand: Vision R.M.S: 28W Subwoofer: RMS 16W Satellites: RMS 6W*2",
+      "minorder":6,
+      "availabe":3000,
+      "unitprice":22000
     },
     {
-      "_id": 1,
-      "name": "Computer Ram",
-      "img": "https://w0.peakpx.com/wallpaper/478/3/HD-wallpaper-random-access-memory-ram-computer.jpg",
-      "short":"its good",
+     
+      "name": "The best Z690 board for DDR5 ",
+      "img": "https://c8.alamy.com/comp/2B7902C/gigabyte-motherboard-2B7902C.jpg",
+      "short":"CPU support: Intel 12th GenSocket: LGA 1700Size: ATXMemory support: 4x DIMM, up to 128GB, DDR5-6400 (OC)Expansion slots: 1x PCIe 5.0 x16, 2x PCIe 4.0 x16 (running at x4)",
       "minorder":5,
-      "availabe":3,
-      "unitprice":2200
+      "availabe":300,
+      "unitprice":2800
     },
     {
-      "_id": 1,
-      "name": "Computer Ram",
-      "img": "https://w0.peakpx.com/wallpaper/478/3/HD-wallpaper-random-access-memory-ram-computer.jpg",
-      "short":"its good",
-      "minorder":5,
-      "availabe":3,
-      "unitprice":2200
+     
+      "name": "Logitech C270 HD Webcam",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP-AtP2KkoBLBPaoKi_ZBB_j8CVCzU4-NhpQ&usqp=CAU",
+      "short":"High quality webcams with crystal clear 4k or 1080p or 720p video for all your meeting & video calling needs. Webcams for Business, Gaming & Home.",
+      "minorder":55,
+      "availabe":3000,
+      "unitprice":1800
     },
     {
-      "_id": 1,
-      "name": "Computer Ram",
-      "img": "https://w0.peakpx.com/wallpaper/478/3/HD-wallpaper-random-access-memory-ram-computer.jpg",
-      "short":"its good",
-      "minorder":5,
-      "availabe":3,
-      "unitprice":2200
+      
+      "name": "Logitech B100 Optical USB Mouse",
+      "img": "https://www.startech.com.bd/image/cache/data/B100%20Optical%20USB%20Mouse-500x500.png",
+      "short":"An office basic with built-in quality.-- Comfort in hand Left-handed or right, you can work comfortably all day long with this ambidextrous mouse.",
+      "minorder":50,
+      "availabe":300,
+      "unitprice":450
     }
   ]

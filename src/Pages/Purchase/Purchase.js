@@ -4,6 +4,7 @@ const Purchase = () => {
     return (
         <div>
             <h2>welcome purchase page</h2>
+             
         </div>
     );
 };
