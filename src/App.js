@@ -1,7 +1,12 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+
 import Blogs from './Pages/Blogs/Blogs';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import Myorder from './Pages/Dashboard/Myorder';
+import Myprofile from './Pages/Dashboard/Myprofile';
+import Myreview from './Pages/Dashboard/Myreview';
 import Home from './Pages/Home/Home';
 import PrivateRoute from './Pages/Home/PrivateRoute';
 import Login from './Pages/Login/Login';
@@ -28,6 +33,12 @@ function App() {
         <Route path="Purchase/:_id" element={<PrivateRoute>
           <Purchasedetails></Purchasedetails>
         </PrivateRoute>} />
+
+        <Route path="dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} >
+          <Route index element={<Myorder></Myorder>}></Route>
+          <Route path="review" element={<Myreview></Myreview>}></Route>
+          <Route path="profile" element={<Myprofile></Myprofile>}></Route>
+        </Route>
        
         <Route path="blogs" element={<Blogs></Blogs>} />
         <Route path="portfolio" element={<Portfolio></Portfolio>} />
