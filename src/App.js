@@ -27,6 +27,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home></Home>} />
+        <Route path="/home" element={<Home></Home>} />
         <Route path="Purchase" element={<PrivateRoute>
           <Purchase></Purchase>
         </PrivateRoute>} />

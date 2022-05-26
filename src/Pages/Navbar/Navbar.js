@@ -14,6 +14,7 @@ const Navbar = () => {
     const logout = () => {
       
         signOut(auth);
+        localStorage.removeItem('accessToken');
       };
     
     const menu = <>
@@ -42,7 +43,7 @@ const Navbar = () => {
                           {menu}
                     </ul>
                 </div>
-                <a class="btn btn-ghost normal-case text-xl">RS Computer Manufacture</a>
+                <a class="btn btn-ghost normal-case text-xl mx-3">RS Computer Zone</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
