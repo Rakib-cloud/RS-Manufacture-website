@@ -4,7 +4,7 @@ import Toolsdetails from './Toolsdetails';
 const Tools = () => {
     const [tools, setTools] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/parts')
+        fetch('https://damp-crag-59705.herokuapp.com/parts')
             .then(res => res.json())
             .then(data => setTools(data));
     }, [])
@@ -13,14 +13,14 @@ const Tools = () => {
             <h4 className='text-xl text-secondary text-center my-12'>Available Parts </h4>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
-                    tools.map(tool =><Toolsdetails
+                    tools.map(tool => <Toolsdetails
                         key={tool._id}
                         tool={tool}
-                    
-                    ></Toolsdetails> )
+
+                    ></Toolsdetails>)
                 }
             </div>
-             
+
         </div>
     );
 };

@@ -8,7 +8,7 @@ const Myorder = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/orders?name=${user.email}`)
+            fetch(`https://damp-crag-59705.herokuapp.com/orders?name=${user.email}`)
                 .then(res => res.json())
                 .then(data => setOrders(data));
         }
@@ -30,7 +30,7 @@ const Myorder = () => {
                     </thead>
                     <tbody>
                         {
-                            orders.map((a, index) =><tr>
+                            orders.map((a, index) => <tr>
                                 <th>{index + 1}</th>
                                 <td>{a.name}</td>
                                 <td>{a.address}</td>
@@ -38,8 +38,8 @@ const Myorder = () => {
                                 <td>{a.oq}</td>
                             </tr>)
                         }
-                        
-                        
+
+
                     </tbody>
                 </table>
             </div>
