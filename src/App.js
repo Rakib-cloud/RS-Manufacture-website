@@ -5,6 +5,7 @@ import Addproduct from './Pages/Addproduct/Addproduct';
 
 import Blogs from './Pages/Blogs/Blogs';
 import Dashboard from './Pages/Dashboard/Dashboard';
+import Manageproducts from './Pages/Dashboard/Manageproducts';
 import Myorder from './Pages/Dashboard/Myorder';
 import Myprofile from './Pages/Dashboard/Myprofile';
 import Myreview from './Pages/Dashboard/Myreview';
@@ -46,6 +47,7 @@ function App() {
           <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
           
           <Route path="addproduct" element={<RequireAdmin><Addproduct></Addproduct></RequireAdmin>}></Route>
+          <Route path="manageproduct" element={<RequireAdmin><Manageproducts></Manageproducts></RequireAdmin>}></Route>
         </Route>
        
         <Route path="blogs" element={<Blogs></Blogs>} />
