@@ -4,6 +4,8 @@ import Business from './Business';
 import Contact from './Contact';
 import Footer from './Footer';
 import Foreview from './Foreview';
+import Morereview from './Morereview';
+
 import Tools from './Tools';
 
 
@@ -16,6 +18,7 @@ const Home = () => {
             <Tools></Tools>
             <Business></Business>
            <Foreview></Foreview>
+           {/* <Morereview></Morereview> */}
            <Contact></Contact>
             <Footer></Footer>
           
