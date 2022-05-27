@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const Myorder = () => {
@@ -26,6 +27,7 @@ const Myorder = () => {
                             <th>Address</th>
                             <th>Phone number</th>
                             <th>Total order quantity</th>
+                            <th>pay</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -36,6 +38,12 @@ const Myorder = () => {
                                 <td>{a.address}</td>
                                 <td>{a.phone}</td>
                                 <td>{a.oq}</td>
+                                <td>{(a.price && !a.paid) && <Link to={`/dashboard/payment/${a._id}`}><button className='btn btn-xs btn-success'>pay</button></Link>}</td>
+                                {(a.price && a.paid) && <div>
+                                        <p><span className='text-success'>Paid</span></p>
+                                        <p>Transaction id: <span className='text-success'>{a.transactionId}</span></p>
+                                    </div>}
+                                 
                             </tr>)
                         }
 

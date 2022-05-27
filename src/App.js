@@ -9,6 +9,7 @@ import Manageproducts from './Pages/Dashboard/Manageproducts';
 import Myorder from './Pages/Dashboard/Myorder';
 import Myprofile from './Pages/Dashboard/Myprofile';
 import Myreview from './Pages/Dashboard/Myreview';
+import Payment from './Pages/Dashboard/Payment';
 import Users from './Pages/Dashboard/Users';
 import Home from './Pages/Home/Home';
 import PrivateRoute from './Pages/Home/PrivateRoute';
@@ -43,6 +44,7 @@ function App() {
           <Route index element={<Myorder></Myorder>}></Route>
           <Route path="review" element={<Myreview></Myreview>}></Route>
           <Route path="profile" element={<Myprofile></Myprofile>}></Route>
+          <Route path="payment/:id" element={<Payment></Payment>}></Route>
 
           <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
           

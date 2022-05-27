@@ -20,6 +20,7 @@ const Purchasedetails = () => {
     const address = event.target.address.value;
     const phone = event.target.phone.value;
     const oq = event.target.oq.value;
+    const price=product.unitprice;
 
     const url = 'https://damp-crag-59705.herokuapp.com/uploadorder';
 
@@ -28,7 +29,7 @@ const Purchasedetails = () => {
     fetch(url, {
       method: 'POST',
       body: JSON.stringify({
-        name, address, phone, oq,
+        name, address, phone, oq,price,
       }),
       headers: {
 
