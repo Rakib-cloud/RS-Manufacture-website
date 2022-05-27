@@ -7,10 +7,14 @@ const Myprofile = () => {
     const handleUpload = (event) => {
         event.preventDefault();
         const education = event.target.education.value;
+        console.log(education);
         const address = event.target.address.value;
+        console.log(address );
         const phone = event.target.phone.value;
+        console.log(phone );
         const profile= event.target.profile.value;
-    
+        console.log(profile );
+        
         const url = 'http://localhost:5000/addprofile';
     
         //fetch data 
@@ -94,15 +98,20 @@ const Myprofile = () => {
           
 
 
-          <div class="md:flex md:items-center mb-6">
+        
+
+<div class="md:flex md:items-center mb-6">
             <div class="md:w-1/3">
               <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" >
-               Linkedin Profile link 
+               Linkedin profile Link
               </label>
+
+
+
+
             </div>
             <div class="md:w-2/3">
-              <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"  name="profile
-" />
+              <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"  type="text" name="profile" />
             </div>
           </div>
 
