@@ -14,7 +14,7 @@ const Manageproducts = () => {
 
     useEffect(() => {
         if (user) {
-            fetch('http://localhost:5000/parts', {
+            fetch('https://damp-crag-59705.herokuapp.com/parts', {
                 method: 'GET',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem('accessToken')}`

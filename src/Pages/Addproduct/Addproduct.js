@@ -18,7 +18,7 @@ const Addproduct = () => {
     const availabel= event.target.availabel.value;
     console.log(availabel );
     
-    const url = 'http://localhost:5000/parts';
+    const url = 'https://damp-crag-59705.herokuapp.com/parts';
 
     //fetch data 
 

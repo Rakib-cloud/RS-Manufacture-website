@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from 'react-query';
 
 const Morereview = () => {
-  const url ='http://localhost:5000/reviews';
+  const url ='https://damp-crag-59705.herokuapp.com/reviews';
    
   const { data:reviews  } = useQuery(['reviews'], () => fetch(url).then(res => res.json()));
 

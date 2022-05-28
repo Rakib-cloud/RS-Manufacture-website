@@ -7,7 +7,7 @@ const Myreview = () => {
         const review = event.target.review.value;
        
     
-        const url = 'http://localhost:5000/review';
+        const url = 'https://damp-crag-59705.herokuapp.com/review';
     
         //fetch data 
     

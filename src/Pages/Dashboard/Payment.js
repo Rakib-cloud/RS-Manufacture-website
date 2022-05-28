@@ -10,7 +10,7 @@ const Payment = () => {
     console.log(id);
  
     
-    const url = `http://localhost:5000/orders/${id}`;
+    const url = `https://damp-crag-59705.herokuapp.com/orders/${id}`;
    
   const { data: orders } = useQuery(['orders', id], () => fetch(url).then(res => res.json()).then(data =>console.log(data)));
 
