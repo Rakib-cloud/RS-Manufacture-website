@@ -1,24 +1,25 @@
-import React, { useEffect, useState } from 'react';
-
+import React from 'react';
+import { useQuery } from 'react-query';
 
 const Morereview = () => {
- 
+  const url ='http://localhost:5000/reviews';
+   
+  const { data:reviews  } = useQuery(['reviews'], () => fetch(url).then(res => res.json()));
 
-  const [Review, setReview] = useState();
-  useEffect(() => {
-    fetch('http://localhost:5000/reviews')
-      .then(res => res.json())
-      .then(data => setReview(data));
-  }, [])
+
+
     return (
         <div>
           
-        
-         {
-            Review.map(re =><>
-            <h2>ratings:{re.rate}</h2>
-            </> )
-         }
+          <div class="card w-50 max-w-md bg-base-100 shadow-xl my-12">
+                <div class="card-body">
+                    <p className="text-success font-bold">Ratings {reviews.rate}</p>
+                    <h2 class="card-title">User Review: {reviews.review}</h2>
+                
+                    
+                </div>
+            </div>
+         
           
 
         </div>
