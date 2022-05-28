@@ -38,6 +38,17 @@ I am also Junior web developer.I was an organizational editor of sanjiban .</p>
   </div>
 </div>
       <p>Some projects live link:</p>
+      <div className="text-success font-bold">
+      <a href="https://rakibstuitorialpoint.netlify.app/">Rakib's Tuitorial app</a>
+     
+      </div>
+      <div className="text-success font-bold">
+      <a href="https://burger-kingreviewer.netlify.app/">Burger king review app</a>
+     
+      </div>
+      <div className="text-success font-bold">
+      <a href="https://rakibulpersonalportfolio.netlify.app/">My portfolio app</a>
+      </div>
     </div>
   </div>
 </div>
